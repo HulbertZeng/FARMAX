@@ -11,6 +11,7 @@ This web app is meant to enhance the quality and quantity of agricultural prodcu
       * On futuer work integrating AI Predict future disasters ahead of time to prevent collateral damage
  
 3. Get international and/or local updates regarding
-       * News
-       * Connecting with other farmers
-       * Resource sharing 
+      * News
+      * Connecting with other farmers
+      * Resource sharing 
+      * Business insights
