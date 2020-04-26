@@ -1,14 +1,15 @@
 <template>
   <div >
-    <div class="card-panel teal lighten-2 margin">
+    <div class="card-panel homebg margin">
     <h1 class="bold">
-  
         <span class="deep-purple-text">F A R </span>
         <span class="light-blue-text"> M A X</span>
-     
     </h1>
-
-    <div class="row">
+    <router-link to="/seasonal" class="marginbtn btn-large">SEASONAL PLANS</router-link>
+    <router-link to="/demands" class="marginbtn btn-large">DEMANDS</router-link>
+    <router-link to="/customers" class="marginbtn btn-large">CUSTOMERS</router-link>
+    <router-link to="/map" class="marginbtn btn-large">INSECTS IN THE RANGE</router-link>
+    <!-- <div class="row">
       <div class="col s12 m6 l3">
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
@@ -60,7 +61,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
     </div>
     <img width="100%" src="../assets/image.png" alt="Image">
   </div>
@@ -84,5 +85,11 @@ export default {
 }
 .bold{
   font-weight: bold;
+}
+.marginbtn{
+  margin: 20px 30px;
+}
+.homebg{
+  background-color: #F59394 !important;
 }
 </style>
