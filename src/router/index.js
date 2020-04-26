@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+window.$ = require('jquery')
+window.jQuery = require('jquery')
+import Raphael from 'raphael/raphael'
+global.Raphael = Raphael
 
 Vue.use(VueRouter)
 
@@ -38,6 +42,26 @@ Vue.use(VueRouter)
     // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "Location" */ '../views/Seasonal.vue')
+    }
+  },
+  {
+    path: '/demands',
+    name: 'Demands',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "Location" */ '../views/Demands.vue')
+    }
+  },
+  {
+    path: '/map',
+    name: 'Map',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "Location" */ '../views/Map.vue')
     }
   }
 ]
