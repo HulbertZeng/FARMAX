@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+window.$ = require('jquery')
+window.jQuery = require('jquery')
+import Raphael from 'raphael/raphael'
+global.Raphael = Raphael
 
 Vue.use(VueRouter)
 

@@ -37,7 +37,12 @@
 
             <div class="deep-orange lighten-4 col s12 m9 ">
                 <h2 class="green-text text-darken-2">DEMANDS</h2>
-
+                <bar-chart
+                                    id="donut"
+                                    :data="barData"
+                                    barColors='[ "#FF6384", "#36A2EB", "#FFCE56" ]'
+                                    resize="true">
+                </bar-chart>
 
             </div>
         </div>
@@ -46,6 +51,7 @@
 
 
 <script>
+import { BarChart } from 'vue-morris'
 export default {  
     data(){
         return {
@@ -56,8 +62,15 @@ export default {
                 {id:2,title:"PRODUCT",description:"Lorem LoremLoremLoremLorem"},
                 {id:3,title:"PRODUCT",description:"Lorem LoremLoremLoremLorem"},
                 {id:4,title:"PRODUCT",description:"Lorem LoremLoremLoremLorem"}
-            ]
+            ],
+            barData: [
+                {  value: 300 },
+                {  value: 50 },
+                { value: 100 }
+                ],
         }
+    },components:{
+        BarChart
     }
     
 }

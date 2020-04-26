@@ -9,9 +9,11 @@
   "dependencies": {
     "axios": "^0.19.2",
     "google-maps-api-loader": "^1.1.1",
+    "jquery": "^3.5.0",
     "material-design-icons": "^3.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.11",
+    "vue-morris": "^1.1.0",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
